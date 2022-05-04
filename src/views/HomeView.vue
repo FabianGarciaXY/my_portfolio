@@ -1,9 +1,10 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HelloWorld msg="Hi, this will be my portfolio"/>
   </div>
 </template>
+
+
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
