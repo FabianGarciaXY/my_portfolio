@@ -4,7 +4,7 @@
 
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/Projects">Projects</router-link>
+    <router-link to="/projects">Projects</router-link>
   </nav>
 </template>
 
