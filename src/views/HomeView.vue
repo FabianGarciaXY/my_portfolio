@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Hi, this will be my portfolio"/>
+    <Top msg="Hi, this will be my portfolio"/>
   </div>
 </template>
 
@@ -8,12 +8,20 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import Top from '@/components/Top.vue'; // @ is an alias to /src
 
 @Options({
   components: {
-    HelloWorld,
+    Top,
   },
 })
 export default class HomeView extends Vue {}
 </script>
+
+<style> 
+* {
+  background-color: rgb(31, 31, 30);
+  color: rgb(235, 235, 211);
+}
+
+</style>
