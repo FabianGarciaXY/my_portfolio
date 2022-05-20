@@ -1,21 +1,21 @@
 <template>
   <div class="home">
-    <Top msg="Hi, this will be my portfolio"/>
+    <TopComponent msg="Hi, this will be my portfolio"/>
   </div>
 </template>
 
 
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import Top from '@/components/Top.vue'; // @ is an alias to /src
+import TopComponent from '@/components/TopComponent.vue'; // @ is an alias to /src
 
-@Options({
+export default {
+  name: 'HomeView',
   components: {
-    Top,
-  },
-})
-export default class HomeView extends Vue {}
+    TopComponent
+  }
+}
+
 </script>
 
 <style> 
