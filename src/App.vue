@@ -7,8 +7,10 @@
   <router-view/>
 </template>
 
-
 <style>
+* {
+  margin: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,10 +22,11 @@ nav {
   gap: 10px;
   list-style: none;
   justify-content: flex-end;
-  padding: 10px 50px 0 0;
+  padding: 20px 50px 10px 0;
+  background-image: linear-gradient(to right, rgb(11, 11, 12), rgb(11, 30, 45));
 }
 nav > * {
   text-decoration-line: none;
-  color: rgb(210, 202, 120);
+  color: rgb(255, 255, 255);
 }
 </style>
