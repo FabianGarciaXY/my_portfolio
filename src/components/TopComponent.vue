@@ -4,7 +4,7 @@
     <h1>I'm Fabian, <br>   
     &lt; I'm a backend developer >_ </h1>
   </div>
-
+<!-- 
   <div>
     <button @click="show"> 
       Press Here
@@ -13,7 +13,7 @@
     <p v-if="visible">
       I'm self-tought software developer from Mexico and I am passionate about coding in languajes like JS and Python.
     </p>
-  </div>
+  </div> -->
 
 </template>
 
@@ -47,8 +47,9 @@ export default defineComponent({
 /*    font-family: 'Iceland', cursive;  */
 
 .title {
-  padding: 100px 0px;
-  font-size: 38px;
+  text-align: left;
+  padding: 0px 0 0 15%;
+  font-size: 33px;
   font-family: 'Righteous', cursive;
 }
 </style>
