@@ -31,7 +31,7 @@ export default defineComponent({
 
   data() {
     return {
-      colors: ["#000", "#fff0b2", "#b0b0b0", "#fcf3cf", "#e7e5dc"],
+      colors: ["#F9F3EE", "#CCF3EE", "#F7F5F2", "#E2D784", "#FDEFF4"],
       numBalls: 20,
       balls: [],
     }
@@ -44,11 +44,12 @@ export default defineComponent({
         let ball = document.createElement("div");
         ball.classList.add("ball");
         ball.style.background = this.colors[Math.floor(Math.random() * this.colors.length)];
-        ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
-        ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+        ball.style.left = `${Math.floor(Math.random() * 90)}vw`;
+        ball.style.top = `${Math.floor(Math.random() * 80)}vh`;
         ball.style.transform = `scale(${Math.random()})`;
         ball.style.width = `${Math.random()}em`;
         ball.style.height = ball.style.width;
+        ball.style.boxShadow = `0px 0px ${Math.random()}px ${Math.random()}px whitesmoke`
         this.balls.push(ball);
         document.querySelector('.home').append(ball);
       }
@@ -88,7 +89,7 @@ export default defineComponent({
 
 <style>
 .home, .console{
-  background-color: rgb(6, 6, 7);
+  background-color: #151515;
   width: 100vw;
   height: 100vh;
 }

@@ -23,7 +23,7 @@ nav {
   list-style: none;
   justify-content: flex-end;
   padding: 20px 50px 10px 0;
-  background-image: linear-gradient(to right, rgb(11, 11, 12), rgb(11, 30, 45));
+  background-color: #151515;
 }
 nav > * {
   text-decoration-line: none;

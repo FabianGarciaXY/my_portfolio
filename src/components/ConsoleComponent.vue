@@ -44,7 +44,7 @@ export default defineComponent({
     color: white;
     box-shadow: 2px 2px 3px 2px rgba(255, 255, 255, 0.385);
     border-radius: 5px;
-    margin: 60px auto 50px auto;    
+    margin: 60px auto 0px auto;    
 }
 #circle-red, #circle-yellow, #circle-green {
     width: 12px;

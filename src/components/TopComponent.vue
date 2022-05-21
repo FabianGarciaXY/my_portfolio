@@ -47,9 +47,10 @@ export default defineComponent({
 /*    font-family: 'Iceland', cursive;  */
 
 .title {
+  z-index: 20;
   color: wheat;
   text-align: left;
-  padding: 0px 0 0 15%;
+  padding: 30px 0 0 15%;
   font-size: 33px;
   font-family: 'Righteous', cursive;
 }
