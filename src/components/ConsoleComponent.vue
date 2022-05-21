@@ -37,25 +37,24 @@ export default defineComponent({
     position: absolute; 
     left: 0; 
     right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    z-index: 3;
-    width: 600px;
-    height: 270px;
+    z-index: 2;
+    width: 55%;
+    height: 48%;
     background-color: #1D1E22;
     color: white;
     box-shadow: 2px 2px 3px 2px rgba(255, 255, 255, 0.385);
     border-radius: 5px;
-    margin: 0px auto 50px auto;    
+    margin: 60px auto 50px auto;    
 }
 #circle-red, #circle-yellow, #circle-green {
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    box-shadow: 0px 0px 1.5px 0.5px rgb(217, 217, 157);
 }
 #circle-icons {
     display: flex;
-    gap: 7px;
+    gap: 8px;
     padding: 6px 7px;
     background-color: #2e2e31;
     border-radius: 5px 5px 2px 2px;

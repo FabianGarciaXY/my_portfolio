@@ -86,7 +86,7 @@ export default defineComponent({
 </script>
 
 
-<style> 
+<style>
 .home, .console{
   background-color: rgb(6, 6, 7);
   width: 100vw;
