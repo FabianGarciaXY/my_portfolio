@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <TopComponent msg="Hi, this will be my portfolio"/>
+    <TopComponent/>
+    <ConsoleComponent/>
   </div>
 </template>
 
@@ -8,11 +9,13 @@
 
 <script lang="ts">
 import TopComponent from '@/components/TopComponent.vue'; // @ is an alias to /src
+import ConsoleComponent from '@/components/ConsoleComponent.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    TopComponent
+    TopComponent,
+    ConsoleComponent
   }
 }
 
