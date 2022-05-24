@@ -1,8 +1,9 @@
 <template>
 
-  <div class="title animate__animated animate__bounce"> 
-    <h1>I'm Fabian, <br>   
-    &lt; I'm a backend developer >_ </h1>
+  <div class="title"> 
+    <h1 class="animate__animated animate__flipInX">I'm Fabian,</h1>   
+    <h2 class="animate__animated animate__slideInLeft"
+      > I'm a backend developer_ </h2>
   </div>
 <!-- 
   <div>
