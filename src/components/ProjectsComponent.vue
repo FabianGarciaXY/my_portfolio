@@ -9,8 +9,16 @@
             <div class="cards-elements" 
                 v-for="project in displayProjects()" 
                 :key="project">
-
-                    {{project}}
+                
+                <figure>
+                    <img 
+                        class="image"
+                        :alt="`${project.img}`">
+                </figure>
+                <div>
+                    <a>{{project.link}}</a>
+                    <h3>{{project.name}}</h3>
+                </div>    
                     
             </div>
         </div>
@@ -26,7 +34,7 @@ export default defineComponent({
     data() {
         return {
             listOfProjects: this.displayProjects(),
-            x: 'awdwad'
+            image1: './../assets/image1.png'
         }
     },
     computed: {
@@ -56,4 +64,12 @@ export default defineComponent({
     padding: 10px;
     border: 2px solid rgb(49, 43, 43);
 }
+.image {
+    max-width: 50%;
+}
+.image:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
 </style>
