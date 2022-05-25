@@ -89,6 +89,7 @@ export default defineComponent({
 
 <style>
 .home, .console{
+/*  background-image: linear-gradient(180deg, #232526, #414345); */
   background-color: #151515;
   width: 100vw;
   height: 100vh;
