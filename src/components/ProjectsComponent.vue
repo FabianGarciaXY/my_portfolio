@@ -8,16 +8,28 @@
         <div id="cards-cointainer">
             <div class="cards-elements" 
                 v-for="project in displayProjects()" 
-                :key="project">
+                :key="project.name">
                 
                 <figure>
-                    <img 
+                    <img
+                        :src="require(`./../assets/${project.img}.png`)"
                         class="image"
-                        :alt="`${project.img}`">
+                        alt="test">
                 </figure>
                 <div>
-                    <a>{{project.link}}</a>
-                    <h3>{{project.name}}</h3>
+                    
+                    <a :href="project.link" target="_blank">
+                        Link
+                    </a> <br>
+                    
+                    <a :href="project.repository" target="_blank">
+                        Code
+                    </a>
+
+                    <h3>
+                        {{project.name}}
+                    </h3>
+
                 </div>    
                     
             </div>
@@ -33,8 +45,7 @@ export default defineComponent({
     name: 'ProjectsComponent',
     data() {
         return {
-            listOfProjects: this.displayProjects(),
-            image1: './../assets/image1.png'
+         title: 'My projects'
         }
     },
     computed: {
@@ -63,6 +74,7 @@ export default defineComponent({
     display: grid;
     padding: 10px;
     border: 2px solid rgb(49, 43, 43);
+    border-radius: 7px;
 }
 .image {
     max-width: 50%;
