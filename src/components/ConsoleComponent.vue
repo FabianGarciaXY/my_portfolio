@@ -10,10 +10,13 @@
 
             <div id="code-space">
                 <div>
-                    &lt;code>
+                    &lt;> <br>
 
-                    <br>
-                    &lt;/code>
+                        <p class="line-1 anim-typewriter">
+                            Animation typewriter style using css steps()                        
+                        </p>
+
+                    &lt;/>
                 </div>
             </div>
         </div>
@@ -30,6 +33,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 #console-container {
     border-radius: 4px;
 }
@@ -69,9 +75,38 @@ export default defineComponent({
     background-color: rgb(25, 166, 25);
 }
 #code-space > * {
+    font-family: 'Anonymous Pro', monospace;  
     text-align: left;
     font-size: 14px;
     padding: 3px 5px;
     background-color: #1D1E22;
 }
+
+/*============ Text animation =============*/
+.line-1{
+    position: relative;
+    top: 30%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 6px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+/* Animation */
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
 </style>
