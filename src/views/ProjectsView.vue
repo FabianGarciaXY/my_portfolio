@@ -17,10 +17,11 @@ export default defineComponent({
 </script>
 
 
-<style>
+<style scoped>
 .projects-page{
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(255, 244, 244);
+  color: whitesmoke;
+  background-image: linear-gradient(to right, #000000, #434343);
+  background-color: #262626;
+  position: absolute;
 }
 </style>
