@@ -3,7 +3,7 @@
   <div class="title"> 
     <h1 class="animate__animated animate__flipInX">I'm Fabian,</h1>   
     <h2 class="animate__animated animate__slideInLeft"
-      > I'm a backend developer_ </h2>
+      > I'm a backend developer</h2>
   </div>
 <!-- 
   <div>
