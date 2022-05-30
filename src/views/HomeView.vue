@@ -11,6 +11,15 @@
       <div class="cube"></div>
       <div class="cube"></div>
     </div> -->
+
+      <div id="about">
+        <about-component />
+      </div>
+
+      <div class="projects-page">
+        <projects-component />
+      </div>
+  
   </div> 
 
 </template>
@@ -21,12 +30,17 @@
 import { defineComponent } from 'vue';
 import TopComponent from '@/components/TopComponent.vue'; // @ is an alias to /src
 import ConsoleComponent from '@/components/ConsoleComponent.vue'
+import AboutComponent from '@/components/AboutComponent.vue';
+import ProjectsComponent from '@/components/ProjectsComponent.vue'
+
 
 export default defineComponent({
   name: 'HomeView',
   components: {
     TopComponent,
-    ConsoleComponent
+    ConsoleComponent,
+    AboutComponent,
+    ProjectsComponent
   }, 
 
   data() {
@@ -101,6 +115,17 @@ export default defineComponent({
   z-index: 1;
 }
 
+/* ABOUT  */
+#about {
+  
+}
+
+/* PROJECTS */
+.projects-page{
+  color: black;
+  background-color: white;
+  position: absolute;
+}
 
 /* Animated Background */
 /*
