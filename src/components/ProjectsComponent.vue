@@ -1,7 +1,7 @@
 <template>
 
     <div class="body">
-        <h1>This Is A Page About My Projects</h1>
+        <h1>My Projects</h1>
         <div id="cards-cointainer">
             <div class="cards-element" 
                 v-for="project in displayProjects()" 

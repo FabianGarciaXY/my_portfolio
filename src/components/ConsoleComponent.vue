@@ -125,7 +125,6 @@ export default defineComponent({
 }
 @keyframes typewriter2 {
     0%{width: 0em;}
-    1% {width:1.5em;}
     100%{width: 3.5em;}
 }
 @keyframes blinkTextCursor2{
