@@ -4,14 +4,6 @@
       <TopComponent class="top"/>
       <ConsoleComponent class="console"/>
 
-    <!--<div class="background">
-      <div class="cube"></div>
-      <div class="cube"></div>
-      <div class="cube"></div>
-      <div class="cube"></div>
-      <div class="cube"></div>
-    </div> -->
-
       <div id="about">
         <about-component />
       </div>
@@ -19,6 +11,14 @@
       <div class="projects-page">
         <projects-component />
       </div>
+<!--         
+        <div class="background">
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+        </div> -->
 
       <div id="footer">
         <footer>
@@ -137,9 +137,9 @@ export default defineComponent({
   background-color: #1D1E22;
 }
 /* Animated Background */
-/*
+
 .background {
-  background-color: rgb(31, 31, 30);
+  background-color: #151515;
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -187,8 +187,8 @@ export default defineComponent({
   left: 50vw;
   top: 10vh;
 }
-*/
-/* Animate Background
+
+
 @keyframes cube {
   from {
     transform: scale(0) rotate(0deg) translate(-50%, -50%);
@@ -199,5 +199,5 @@ export default defineComponent({
     opacity: 0;
   }
 }
-*/
+
 </style>
