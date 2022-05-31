@@ -123,9 +123,6 @@ export default defineComponent({
 }
 
 /* ABOUT  */
-#about {
-  
-}
 
 /* PROJECTS */
 .projects-page {

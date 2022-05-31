@@ -38,8 +38,8 @@
                     </div>
 
                     <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="info">
+                            {{project.info}}
                         </p>
                     </div>
 
@@ -145,6 +145,11 @@ h3 {
     align-items: center;
     gap: 20px;
 }
+.info {
+    padding: 0 50px;
+    text-align: justify;
+}
+
 .links{
     opacity: 0.4;
     padding: 10px 0;

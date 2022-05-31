@@ -119,6 +119,7 @@ export default defineComponent ({
 }
 h1 {
     padding-bottom: 50px;
+    text-shadow: 10px 12px 4px black;
 }
 .content {
     margin: auto;
@@ -128,6 +129,8 @@ h1 {
     justify-content: center;
     border-radius: 12px;
     padding: 20px;
+    text-shadow: 10px 12px 4px black;
+    
 }
 
 .content > #text {
