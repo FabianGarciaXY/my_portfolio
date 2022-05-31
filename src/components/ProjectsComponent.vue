@@ -75,9 +75,15 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
+<style>
+.body {
+    background-color: #151515;
+    margin:0; 
+}
+
 h1{
-    padding:50px 0 0 0;
+    padding: 150px 0 0 0;
+    color: white;
 }
 h3 {
     padding: 10px 0 20px 0;
@@ -140,6 +146,7 @@ h3 {
     gap: 20px;
 }
 .links{
+    opacity: 0.4;
     padding: 10px 0;
     z-index: 3;
     display: flex;
@@ -149,9 +156,12 @@ h3 {
     display: flex;
     gap:  20px;
 }
+.links:hover {
+    opacity:1;
+    transition: 0.5s;
+}
 
 .button {
-    opacity: 0.4;
     cursor: pointer;
     padding: 6px;
     width: 100px;
@@ -161,8 +171,8 @@ h3 {
 }
 
 .button:hover {
-    opacity:1;
-    transition: 0.5s;
+    transform: scale(1.08);
+    transition: 0.2s;
 }
 
 a {

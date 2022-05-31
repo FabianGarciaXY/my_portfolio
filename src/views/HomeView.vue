@@ -19,6 +19,13 @@
       <div class="projects-page">
         <projects-component />
       </div>
+
+      <div id="footer">
+        <footer>
+          @Fabyan Gahezz
+          <a target="_blank" href="https://icons8.com/icon/21111/twitter">Twitter icon by Icons8</a>
+        </footer>
+  </div>
   
   </div> 
 
@@ -59,7 +66,7 @@ export default defineComponent({
         ball.classList.add("ball");
         ball.style.background = this.colors[Math.floor(Math.random() * this.colors.length)];
         ball.style.left = `${Math.floor(Math.random() * 90)}vw`;
-        ball.style.top = `${Math.floor(Math.random() * 80)}vh`;
+        ball.style.top = `${Math.floor(Math.random() * 220)}vh`;
         ball.style.transform = `scale(${Math.random()})`;
         ball.style.width = `${Math.random()}em`;
         ball.style.height = ball.style.width;
@@ -121,12 +128,17 @@ export default defineComponent({
 }
 
 /* PROJECTS */
-.projects-page{
-  color: black;
-  background-color: white;
-  position: absolute;
+.projects-page {
+  background-color: #151515;
+  padding-bottom: 1px;
 }
 
+
+#footer {
+  padding: 10px;
+  color: rgb(191, 191, 191);
+  background-color: #1D1E22;
+}
 /* Animated Background */
 /*
 .background {
